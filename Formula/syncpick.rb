@@ -3,9 +3,9 @@ class Syncpick < Formula
   homepage "https://github.com/Cyberlane/syncpick"
   url "https://github.com/Cyberlane/syncpick/archive/refs/tags/v0.1.0.tar.gz"
   version "0.1.0"
-  sha256 "fe5152306dfa9d1c6913a3ccc24a377c1618434baab00895bba363997e65e5e2"
+  sha256 "5380fb2e87fae04952493fd080fea77f8b1df5b92d4bf29320e1e9ac12698080"
   license "MIT"
-  revision 1
+  revision 2
 
   depends_on "fzf"
   depends_on "rsync"
