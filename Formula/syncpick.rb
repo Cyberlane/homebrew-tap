@@ -5,6 +5,7 @@ class Syncpick < Formula
   version "0.1.0"
   sha256 "fe5152306dfa9d1c6913a3ccc24a377c1618434baab00895bba363997e65e5e2"
   license "MIT"
+  revision 1
 
   depends_on "fzf"
   depends_on "rsync"
@@ -13,6 +14,7 @@ class Syncpick < Formula
   def install
     inreplace "syncpick", "#!/bin/zsh", "#!#{Formula["zsh"].opt_bin}/zsh"
     bin.install "syncpick"
+    bin.install_symlink bin/"syncpick" => "sp"
   end
 
   test do
