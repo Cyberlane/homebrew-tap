@@ -1,16 +1,16 @@
 class VlcMediaWatcher < Formula
   desc "Local, safe-by-default VLC watch tracking with a terminal UI"
   homepage "https://github.com/Cyberlane/vlc-media-watcher"
-  url "https://github.com/Cyberlane/vlc-media-watcher/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "9d24fd8043b270aa672fdf7e850ed0250600b37b13aa941ec6271c434fbebc23"
+  url "https://github.com/Cyberlane/vlc-media-watcher/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "0d1d889f60ecd1c2c3bd44eef39615116c8e1337fc688ae79dcb492822e3bbde"
   license "MIT"
 
   depends_on "go" => :build
 
   def install
     ldflags = %w[
-      -X main.version=0.1.0
-      -X main.commit=v0.1.0
+      -X main.version=0.2.0
+      -X main.commit=v0.2.0
       -X main.date=unknown
       -X main.builtBy=homebrew
     ]
@@ -26,6 +26,6 @@ class VlcMediaWatcher < Formula
   end
 
   test do
-    assert_match "vlc-media-watcher 0.1.0", shell_output("#{bin}/vlc-media-watcher version")
+    assert_match "vlc-media-watcher 0.2.0", shell_output("#{bin}/vlc-media-watcher version")
   end
 end
