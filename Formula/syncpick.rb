@@ -1,8 +1,8 @@
 class Syncpick < Formula
   desc "Interactive fzf picker for syncing selected SSH folders with rsync"
   homepage "https://github.com/Cyberlane/syncpick"
-  url "https://github.com/Cyberlane/syncpick/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "0a0f13abc74cce73d7a0e2424314f46c1babe5e051d12ef455d08301babac4cd"
+  url "https://github.com/Cyberlane/syncpick/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "3ce910886c445db6cd16fe12e1a639f0bbf2bd3d46b7bed847fc9e0d21cce221"
   license "MIT"
 
   depends_on "fzf"
